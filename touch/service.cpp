@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.pixel"
+#define LOG_TAG "vendor.mokee.touch@1.0-service.pixel"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -28,7 +28,7 @@ using android::sp;
 using android::status_t;
 using android::OK;
 
-using ::vendor::lineage::touch::pixel::GloveMode;
+using ::vendor::mokee::touch::pixel::GloveMode;
 
 int main() {
     sp<GloveMode> gloveMode;

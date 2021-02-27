@@ -20,9 +20,9 @@
 
 #define TOUCH_SENSITIVITY_PROP "persist.vendor.touch_sensitivity_mode"
 
-namespace vendor::lineage::touch::pixel {
+namespace vendor::mokee::touch::pixel {
 
-// Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
+// Methods from ::vendor::mokee::touch::V1_0::IGloveMode follow.
 Return<bool> GloveMode::isEnabled() {
     return android::base::GetBoolProperty(TOUCH_SENSITIVITY_PROP, false);
 }
@@ -31,4 +31,4 @@ Return<bool> GloveMode::setEnabled(bool enabled) {
     return android::base::SetProperty(TOUCH_SENSITIVITY_PROP, enabled ? "1" : "0");
 }
 
-}  // namespace vendor::lineage::touch::pixel
+}  // namespace vendor::mokee::touch::pixel

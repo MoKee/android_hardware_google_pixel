@@ -16,11 +16,11 @@
 
 #pragma once
 
-#include <vendor/lineage/touch/1.0/IGloveMode.h>
+#include <vendor/mokee/touch/1.0/IGloveMode.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 
-namespace vendor::lineage::touch::pixel {
+namespace vendor::mokee::touch::pixel {
 
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
@@ -31,9 +31,9 @@ using ::android::hardware::Void;
 using ::android::sp;
 
 struct GloveMode : public V1_0::IGloveMode {
-    // Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
+    // Methods from ::vendor::mokee::touch::V1_0::IGloveMode follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 };
 
-}  // namespace vendor::lineage::touch::pixel
+}  // namespace vendor::mokee::touch::pixel
